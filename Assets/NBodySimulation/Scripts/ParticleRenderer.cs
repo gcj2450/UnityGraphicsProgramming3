@@ -24,7 +24,7 @@ namespace Kodai
             particleRenderMat.SetPass(0);
             particleRenderMat.SetBuffer("_Particles", simScript.GetParticleBuffer());
 
-            Graphics.DrawProcedural(MeshTopology.Points, simScript.GetParticleNum());
+            Graphics.DrawProceduralNow(MeshTopology.Points, simScript.GetParticleNum());
 
 
         }
